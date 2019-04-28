@@ -14,7 +14,6 @@ app.all("*", (req, res, next) => {
 		"Access-Control-Allow-Headers",
 		"Content-type, Accept, X-Access-Token, X-Key"
 	);
-	if ("OPTIONS" == req.method) res.status(200).end();
 	else next();
 });
 
